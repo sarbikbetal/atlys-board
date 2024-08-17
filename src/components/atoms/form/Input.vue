@@ -1,5 +1,5 @@
 <template>
-    <div class="input-wrapper border-[1.5px] mt-2.5 pl-3 pr-2.5 height-[43px]">
+    <div class="input-wrapper border-[1.5px] mt-2.5 pl-3 pr-2.5 h-[43px]">
         <input v-bind="$attrs" class="flex-grow" />
         <slot name="suffixIcon" class="flex-none" />
     </div>

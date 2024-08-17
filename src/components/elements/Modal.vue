@@ -12,7 +12,7 @@ const props = withDefaults(
     {
         visible: false,
         closable: true,
-        showMask: false
+        showMask: true
     }
 )
 
@@ -33,9 +33,9 @@ const handleClose = () => {
             <div
                 v-if="props.visible"
                 class="modal-mask"
-                :class="{ 'backdrop-blur': props.showMask }"
+                :class="{ 'backdrop-blur-[2px]': props.showMask }"
             >
-                <div class="modal-container gradient-card" v-bind="$attrs">
+                <div class="modal-container gradient-border" v-bind="$attrs">
                     <button v-if="props.closable" class="modal-close-btn" @click="handleClose">
                         <Cross class="h-4 w-4" />
                     </button>
@@ -51,12 +51,12 @@ const handleClose = () => {
 <style>
 @charset "UTF-8";
 .modal-mask {
-    @apply h-full w-full flex top-0 left-0 z-50 fixed;
+    @apply h-full w-full flex top-0 left-0 z-50 fixed bg-black/50;
     transition: opacity 0.3s ease;
 }
 
 .modal-container {
-    @apply m-auto min-w-80 px-6 py-10 bg-card;
+    @apply m-auto min-w-80 px-6 py-10 bg-card rounded-lg relative;
     transition: all 0.3s ease;
 }
 
@@ -74,11 +74,5 @@ const handleClose = () => {
 
 .modal-leave-to {
     opacity: 0;
-}
-
-.modal-enter-from .modal-container,
-.modal-leave-to .modal-container {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
 }
 </style>

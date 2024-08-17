@@ -3,7 +3,7 @@ import Arrow from '@/assets/icons/arrow.svg'
 import FormItem from '@/components/elements/FormItem.vue'
 import AtlysButton from '@/components/atoms/button.vue'
 
-const emit = defineEmits<{ login: [] }>()
+const emit = defineEmits<{ login: []; signupRedirect: [] }>()
 </script>
 
 <template>
@@ -31,13 +31,13 @@ const emit = defineEmits<{ login: [] }>()
             <AtlysButton label="Login now" class="w-full mt-5" @click="emit('login')" />
         </form>
 
-        <RouterLink
-            to="/signup"
+        <button
+            @click="emit('signupRedirect')"
             class="font-medium text-sm mt-3 inline-block text-gray-300 hover:underline"
         >
             <span> Not registered yet? </span>
             <span class="text-gray-500"> Register </span>
             <Arrow class="inline-block" />
-        </RouterLink>
+        </button>
     </div>
 </template>

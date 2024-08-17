@@ -8,7 +8,7 @@ defineOptions({ name: 'LoginPage' })
     <div class="flex flex-col items-center justify-center h-screen w-full">
         <Logo class="h-10 w-10 mb-12" />
 
-        <div class="gradient-card px-6 py-10 bg-card w-[463px]">
+        <div class="gradient-border px-6 py-10 bg-card w-[463px] rounded-lg">
             <Login @login="$router.push('/home')" />
         </div>
     </div>

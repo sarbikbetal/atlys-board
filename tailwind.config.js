@@ -32,5 +32,28 @@ export default {
             '2xl': ['28px', '34px']
         }
     },
-    plugins: []
+    plugins: [
+        ({ addUtilities }) => {
+            addUtilities({
+                '.gradient-border': {
+                    position: 'relative',
+                    boxSizing: 'border-box',
+                    backgroundClip: 'padding-box',
+                    border: 'solid 2px transparent'
+                },
+                '.gradient-border:before': {
+                    content: "''",
+                    position: 'absolute',
+                    top: '0',
+                    right: '0',
+                    bottom: '0',
+                    left: '0',
+                    zIndex: '-1',
+                    margin: '-2px',
+                    borderRadius: 'inherit',
+                    background: 'linear-gradient(140deg, #969696, #343434)'
+                }
+            })
+        }
+    ]
 }

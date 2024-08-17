@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Card from '@/components/elements/Card.vue'
 import AtlysButton from '@/components/atoms/button.vue'
+
+const emit = defineEmits<{ create: [] }>()
 </script>
 
 <template>
@@ -15,7 +17,7 @@ import AtlysButton from '@/components/atoms/button.vue'
             <span class="text-base/6 text-gray-300 flex-grow"> How are you feeling today? </span>
         </div>
         <div class="flex justify-end mt-4">
-            <AtlysButton label="Post" />
+            <AtlysButton label="Post" @click="emit('create')" />
         </div>
     </Card>
 </template>
