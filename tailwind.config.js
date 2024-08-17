@@ -12,6 +12,7 @@ export default {
             white: colors.white,
             dark: '#131319',
             card: '#27292D',
+            post: '#191920',
             gray: {
                 100: '#35373B',
                 200: '#6B6C70',
@@ -27,7 +28,8 @@ export default {
             xs: ['12px', '15px'],
             sm: ['14px', '17px'],
             base: ['16px', '19px'],
-            lg: ['18px', '22px']
+            lg: ['18px', '22px'],
+            '2xl': ['28px', '34px']
         }
     },
     plugins: []

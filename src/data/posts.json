@@ -1,0 +1,39 @@
+[
+    {
+        "user": {
+            "name": "Theresa Webb",
+            "timestamp": "5 mins ago",
+            "avatarUrl": "/public/avatars/Theresa.webp"
+        },
+        "post": {
+            "emoji": "👋",
+            "content": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "commentCount": "24"
+        }
+    },
+    {
+        "user": {
+            "name": "Marvin McKinney",
+            "timestamp": "8 mins ago",
+            "avatarUrl": "/public/avatars/Marvin.png"
+        },
+        "post": {
+            "emoji": "😞",
+            "content": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "commentCount": "32",
+            "isEdited": true
+        }
+    },
+    {
+        "user": {
+            "name": "Jurica Koletić",
+            "timestamp": "10 mins ago",
+            "avatarUrl": "/public/avatars/Jurica.jpeg"
+        },
+        "post": {
+            "emoji": "🤘",
+            "content": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "commentCount": "14"
+        }
+    }
+]

@@ -1,6 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import Arrow from '@/assets/icons/arrow.svg'
 import FormItem from '@/components/elements/FormItem.vue'
+import AtlysButton from '@/components/atoms/button.vue'
+
+const emit = defineEmits<{ login: [] }>()
 </script>
 
 <template>
@@ -25,6 +28,16 @@ import FormItem from '@/components/elements/FormItem.vue'
                     <button class="hover:underline text-gray-500">Forgot password?</button>
                 </template>
             </FormItem>
+            <AtlysButton label="Login now" class="w-full mt-5" @click="emit('login')" />
         </form>
+
+        <RouterLink
+            to="/signup"
+            class="font-medium text-sm mt-3 inline-block text-gray-300 hover:underline"
+        >
+            <span> Not registered yet? </span>
+            <span class="text-gray-500"> Register </span>
+            <Arrow class="inline-block" />
+        </RouterLink>
     </div>
 </template>
