@@ -1,3 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import router from '@/router'
 
-<template></template>
+router.replace('/login')
+</script>
