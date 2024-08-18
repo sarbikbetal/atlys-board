@@ -32,19 +32,19 @@ const isSignupModalVisible = computed({
 </script>
 
 <template>
-    <Modal v-model:visible="isLoginModalVisible" class="w-[463px]">
-        <Login
-            @login="() => (isLoginModalVisible = false)"
-            @signupRedirect="() => (isSignupModalVisible = true)"
-        />
-    </Modal>
-    <Modal v-model:visible="isSignupModalVisible" class="w-[463px]">
-        <Signup
-            @signup="() => (isSignupModalVisible = false)"
-            @loginRedirect="() => (isLoginModalVisible = true)"
-        />
-    </Modal>
     <div class="flex flex-col h-screen w-full max-w-[748px] px-6 mx-auto py-[70px] gap-y-4">
+        <Modal v-model:visible="isLoginModalVisible" class="w-[463px]">
+            <Login
+                @login="() => (isLoginModalVisible = false)"
+                @signupRedirect="() => (isSignupModalVisible = true)"
+            />
+        </Modal>
+        <Modal v-model:visible="isSignupModalVisible" class="w-[463px]">
+            <Signup
+                @signup="() => (isSignupModalVisible = false)"
+                @loginRedirect="() => (isLoginModalVisible = true)"
+            />
+        </Modal>
         <div>
             <h3 class="text-2xl text-gray-500">Hello Jane</h3>
             <p class="text-base/6 text-gray-300 mt-3 max-w-[580px]">

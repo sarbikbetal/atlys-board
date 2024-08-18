@@ -3,7 +3,7 @@
         "user": {
             "name": "Theresa Webb",
             "timestamp": "5 mins ago",
-            "avatarUrl": "/public/avatars/Theresa.webp"
+            "avatarUrl": "/avatars/Theresa.webp"
         },
         "post": {
             "emoji": "👋",
@@ -15,7 +15,7 @@
         "user": {
             "name": "Marvin McKinney",
             "timestamp": "8 mins ago",
-            "avatarUrl": "/public/avatars/Marvin.png"
+            "avatarUrl": "/avatars/Marvin.png"
         },
         "post": {
             "emoji": "😞",
@@ -28,7 +28,7 @@
         "user": {
             "name": "Jurica Koletić",
             "timestamp": "10 mins ago",
-            "avatarUrl": "/public/avatars/Jurica.jpeg"
+            "avatarUrl": "/avatars/Jurica.jpeg"
         },
         "post": {
             "emoji": "🤘",
