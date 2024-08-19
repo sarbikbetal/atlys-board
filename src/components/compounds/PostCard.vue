@@ -21,7 +21,7 @@ const props = defineProps<{ post: Post }>()
                 <MenuIcon />
             </button>
         </div>
-        <div class="bg-dark py-4 pl-4 pr-[30px] rounded-lg mt-5 flex gap-x-4 cursor-default">
+        <div class="bg-post py-4 pl-4 pr-[30px] rounded-lg mt-5 flex gap-x-4 cursor-default">
             <div
                 class="flex items-center justify-center flex-none bg-card rounded-full text-lg/none h-12 w-12"
             >

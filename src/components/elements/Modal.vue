@@ -52,12 +52,12 @@ const handleClose = () => {
 @charset "UTF-8";
 .modal-mask {
     @apply h-full w-full flex top-0 left-0 z-50 fixed bg-black/50;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-out;
 }
 
 .modal-container {
     @apply m-auto min-w-80 px-6 py-10 bg-card rounded-lg relative;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
 }
 
 .modal-body {

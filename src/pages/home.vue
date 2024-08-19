@@ -51,7 +51,12 @@ const isSignupModalVisible = computed({
                 How are you doing today? Would you like to share something with the community 🤗
             </p>
         </div>
-        <PostCreate class="mt-6" @create="() => (isLoginModalVisible = true)" />
-        <CardPost v-for="(post, index) in posts" :post="post" :key="index" />
+        <PostCreate class="mt-6" @click="() => (isSignupModalVisible = true)" />
+        <CardPost
+            v-for="(post, index) in posts"
+            :post="post"
+            :key="index"
+            @click="() => (isSignupModalVisible = true)"
+        />
     </div>
 </template>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { nextTick, ref } from 'vue'
 import Card from '@/components/elements/Card.vue'
-import AtlysButton from '@/components/atoms/Button1.vue'
+import AtlysButton from '@/components/atoms/Button.vue'
 const emit = defineEmits<{ create: [] }>()
 
 const isEditMode = ref(false)
@@ -16,7 +16,7 @@ const handleEditClick = async (e) => {
 <template>
     <Card>
         <p class="text-lg text-gray-500">Create post</p>
-        <div class="bg-dark py-4 pl-4 pr-[30px] rounded-lg mt-4 flex gap-x-4 items-center">
+        <div class="bg-post py-4 pl-4 pr-[30px] rounded-lg mt-4 flex gap-x-4 items-center">
             <div
                 class="flex items-center justify-center flex-none bg-card rounded-full text-lg/none h-12 w-12"
             >
