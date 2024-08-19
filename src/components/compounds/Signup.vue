@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Arrow from '@/assets/icons/arrow.svg'
 import FormItem from '@/components/elements/FormItem.vue'
-import AtlysButton from '@/components/atoms/button.vue'
+import AtlysButton from '@/components/atoms/Button1.vue'
 
 const emit = defineEmits<{ signup: []; loginRedirect: [] }>()
 </script>

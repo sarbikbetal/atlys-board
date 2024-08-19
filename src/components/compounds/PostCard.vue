@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Card from '@/components/elements/Card.vue'
 import Comment from '@/assets/icons/chat.svg'
+import MenuIcon from '@/assets/icons/kebab.svg'
 import type { Post } from '@/data/interfaces'
 
 const props = defineProps<{ post: Post }>()
@@ -16,6 +17,9 @@ const props = defineProps<{ post: Post }>()
                     {{ props.post.user.timestamp }} {{ props.post.post.isEdited ? '• Edited' : '' }}
                 </p>
             </div>
+            <button class="ml-auto">
+                <MenuIcon />
+            </button>
         </div>
         <div class="bg-dark py-4 pl-4 pr-[30px] rounded-lg mt-5 flex gap-x-4 cursor-default">
             <div

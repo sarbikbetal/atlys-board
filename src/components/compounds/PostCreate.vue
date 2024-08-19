@@ -1,8 +1,16 @@
 <script setup lang="ts">
+import { nextTick, ref } from 'vue'
 import Card from '@/components/elements/Card.vue'
-import AtlysButton from '@/components/atoms/button.vue'
-
+import AtlysButton from '@/components/atoms/Button1.vue'
 const emit = defineEmits<{ create: [] }>()
+
+const isEditMode = ref(false)
+
+const handleEditClick = async (e) => {
+    isEditMode.value = true
+    await nextTick()
+    e.target.focus()
+}
 </script>
 
 <template>
@@ -14,7 +22,15 @@ const emit = defineEmits<{ create: [] }>()
             >
                 💬
             </div>
-            <span class="text-base/6 text-gray-300 flex-grow"> How are you feeling today? </span>
+            <span
+                class="text-base/6 text-gray-300 flex-grow focus:outline-none"
+                :class="{ 'text-gray-500': isEditMode }"
+                @click="handleEditClick"
+                @keyup.esc="isEditMode = false"
+                :contenteditable="isEditMode"
+            >
+                How are you feeling today?
+            </span>
         </div>
         <div class="flex justify-end mt-4">
             <AtlysButton label="Post" @click="emit('create')" />
